@@ -1,15 +1,16 @@
-export class King {
+import { Character } from "./characters.js";
+export class King extends Character {
   constructor(name, family, age, status, years, tvShow) {
-    this.name = name;
-    this.family = family;
-    this.age = age;
-    this.status = status;
+    super(name, family, age, status, tvShow);
     this.years = years;
-    this.tvShow = tvShow;
   }
 
   die = () => {
     this.status = "dead";
     return this.status;
   };
+
+  greet() {
+    return "Vais a morir todos";
+  }
 }
