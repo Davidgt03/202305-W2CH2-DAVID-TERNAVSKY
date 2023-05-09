@@ -1,8 +1,9 @@
-export class Character {
-  constructor(name, family, age, status) {
+export class King {
+  constructor(name, family, age, status, years) {
     this.name = name;
     this.family = family;
     this.age = age;
     this.status = status;
+    this.years = years;
   }
 }
