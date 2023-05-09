@@ -10,4 +10,8 @@ export class Character {
     this.status = "dead";
     return this.status;
   };
+
+  greet() {
+    return "Primero pego y luego pregunto";
+  }
 }
